@@ -1,0 +1,2 @@
+## SetUnhandledExceptionFilter
+设置异常捕获函数。当异常没有处理的时候，系统会调用SetUnderhandledExceptionFilter所设置的异常处理函数。

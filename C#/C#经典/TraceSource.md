@@ -1,0 +1,9 @@
+## 基于TraceSource的跟踪日志系统
+对于这个系统来说，除了TraceSource外，还具有额外的核心对象，分别为TraceListener和TraceSwitch。  
+
+日志系统基于TraceListener，进行目的地记录。当TraceSource记录某条跟踪日志时，日志消息会分发给注册的每一个TraceListener并由它们写入对应目的地。每一个TraceSource都有SourceSwitch，后者起到了日志过滤的作用。  
+
+SourceSwitch定义了相应的过滤条件来帮助TraceSource决定是否应该将跟踪日志分发给TraceListener，如果指定的日志消息不满足过滤条件，TraceSource将不会进行任何实质性的日志记录工作
+
+## 参考
+https://www.cnblogs.com/Leo_wl/p/5869955.html
