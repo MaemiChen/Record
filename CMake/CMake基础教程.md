@@ -61,9 +61,12 @@ FUN(${var} ${ss})
 ## 6. add_executable
 将文件声明可执行文件
 
-## 7. add_custom_target add_custom_target
+## 7. add_custom_target 
 https://yngzmiao.blog.csdn.net/article/details/102797448
+
+
 
 ## 参考链接
 1. https://zhuanlan.zhihu.com/p/119426899
 2. https://github.com/ttroy50/cmake-examples (这个是一个cmake的详细教程)
+3. https://cmake.org/cmake/help/v3.17/guide/tutorial/index.html#adding-system-introspection-step-5 （官方文档）
