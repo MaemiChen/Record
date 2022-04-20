@@ -7,4 +7,5 @@
 命令模式属于对象的行为型模式。命令模式是把一个操作或者行为抽象为一个对象中。通过对命令的抽象化使得发出命令的责任和执行命令的责任分隔开。命令模式的实现可以提供命令的撤销和恢复功能。
 
 ## 参考链接
-https://www.cnblogs.com/zhili/p/WPFCommand.html
+https://www.cnblogs.com/zhili/p/WPFCommand.html  
+https://www.cnblogs.com/Jax/archive/2009/10/12/1581109.html （AttachBehavior）

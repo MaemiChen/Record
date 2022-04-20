@@ -28,7 +28,7 @@
     2) 直接Direct = 2：只有事件源才有机会响应事件。
     3) 隧道Tunnel = 0,：从元素树的根部调用事件处理程序并依次向下深入直到事件源。一般情况下，WPF提供的输入事件都是以隧道/冒泡对实现的。隧道事件常常被称为Preview事件。
 
-5. Dependency Property 依赖属性  
+5. DependencyProperty 依赖属性  
     1. 依赖属性就是一种可以自己没有值，并能通过使用Binding从数据源获得值（依赖在别人身上）的属性。拥有依赖属性的对象称为“依赖对象”。  
     2. WPF开发中，必须使用依赖对象作为依赖属性的宿主，使二者结合起来。依赖对象的概念被DependencyObject类所实现，依赖属性的概念则由DependencyProperty类所实现  
     https://www.cnblogs.com/sjqq/p/8458228.html  （依赖属性）  
