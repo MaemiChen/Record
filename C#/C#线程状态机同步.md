@@ -25,6 +25,18 @@ Parallel.For(1, 10000, x=>
 
 ## async await
 可以简单的实现异步编程，程序判断await的位置，然后根据生成异步线程处理await后的部分，返回一个task，可以获取这个result值。然后回到主线程
+```C#
+private async void button1_Click(object sender, EventArgs e)
+{
+    var t = Task.Run(() => {
+        Thread.Sleep(5000);
+        return "Hello I am TimeConsumingMethod";
+    });
+    textBox1.Text = await t;
+}
+```
+### await之前之后的线程
+await关键字前和之后的代码可能是再不同线程上执行的。是否再相同线程上执行，是由.Net根据当前状态（默认情况是线程池当前状态）决定。
 
 ## 参考链接
 https://www.cnblogs.com/seabluescn/p/12973936.html
